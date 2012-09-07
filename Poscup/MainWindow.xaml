@@ -1,0 +1,28 @@
+﻿<Window x:Class="Poscup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="POSCUP" Width="600" Height="400" 
+        Icon="/Poscup;component/poscup.ico"
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Maximized">
+    <Grid>
+        <Grid Name="container"
+              Grid.Row="0" Grid.Column="0"
+              Margin="30">
+            <TextBlock Name="posterText"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       TextAlignment="Center"
+                       TextWrapping="Wrap">
+            </TextBlock>
+        </Grid>
+        <Canvas>
+            <TextBox Name="inputField"
+                 Canvas.Bottom="0" Canvas.Left="0" Canvas.Right="0"
+                 Background="Transparent"
+                 Foreground="{StaticResource {x:Static SystemColors.GrayTextBrushKey}}"
+                 BorderBrush="Transparent" BorderThickness="0"
+                 TabIndex="0" AcceptsReturn="True">
+            </TextBox>
+        </Canvas>
+    </Grid>
+</Window>
